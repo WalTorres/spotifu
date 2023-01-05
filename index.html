@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body class="a-body">
+    <div class="o-layout">
+      <div class="o-layout__block">
+        <div class="o-layout__sidebar">
+          <div class="g-sidebar">
+            <header class="m-logo">
+              <a href="/" aria-current="page">
+                <img
+                  class="m-logo__img"
+                  src="./img/spotifu-logo.png"
+                  width="112"
+                  height="32"
+                  alt="logo-spotifu"
+                />
+              </a>
+            </header>
+
+            <nav class="m-menu" aria-label="Principal">
+              <ul class="m-menu__list">
+                <li class="m-menu__item is-active">
+                  <a class="m-menu__link a-link" href="/" aria-current="page">
+                    <i class="icon-home" aria-hidden="true"></i>
+                    <span>Inicio</span>
+                  </a>
+                </li>
+                <li class="m-menu__item">
+                  <a class="m-menu__link a-link" href="/" aria-current="page">
+                    <i class="icon-search" aria-hidden="true"></i>
+                    <span>Buscar</span>
+                  </a>
+                </li>
+                <li class="m-menu__item">
+                  <a class="m-menu__link a-link" href="/" aria-current="page">
+                    <i class="icon-credit-card" aria-hidden="true"></i>
+                    <span>Inicio</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav class="m-list" aria-labelledby="library-navigation">
+              <h2 class="m-list__title" id="library-navigation">
+                Tu biblioteca
+              </h2>
+              <ul class="m-list__content">
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Creada para ti</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Tus Me Gusta</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Artistas</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Podcast</a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav class="m-list" aria-labelledby="playlist-navigation">
+              <h2 class="m-list__title" id="playlist-navigation">Playlist</h2>
+              <ul class="m-list__content">
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Lo mejor de lo mejor</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Naruto aol 100%</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Para cantar en la ducha</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Sin parar</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Naruto opening</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Boku no pico</a>
+                </li>
+                <li class="m-list__item">
+                  <span class="a-ellipsis">
+                    <a class="a-link" href="#"
+                      >Más populares de la semana para ti que eres una pro</a
+                    >
+                  </span>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Mis pistas de shazam</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Audio Library</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Amor y otras</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Latin</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Pokemon</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Metal gear</a>
+                </li>
+                <li class="m-list__item">
+                  <a class="a-link" href="#">Super Mario bros 3</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="o-layout__main">
+          <div class="o-page">
+            <div class="a-sticky">
+              <div class="o-page__block">
+                <header
+                  class="g-header o-page__header"
+                  aria-label="Barra superior y menú del usuario"
+                >
+                  <div class="m-navigation">
+                    <button
+                      class="m-navigation__prev"
+                      aria-label="Volver"
+                      title="Volver"
+                    >
+                      <i class="icon-arrow-left" aria-hidden="true"></i>
+                    </button>
+                    <button
+                      class="m-navigation__next"
+                      disabled
+                      class=""
+                      aria-label="Avanzar"
+                      title="Avanzar"
+                    >
+                      <i class="icon-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+
+                  <form
+                    class="m-search"
+                    action=""
+                    role="search"
+                    aria-label="Buscar por Artistas, canciones o podcast"
+                  >
+                    <i class="icon-search" aria-hidden="true"></i>
+                    <input
+                      type="search"
+                      placeholder="Buscar por Artistas, canciones o podcast"
+                    />
+                  </form>
+                </header>
+              </div>
+            </div>
+
+            <main class="o-page__block">
+              <section class="g-playlist-list" aria-labelledby="region1">
+                <div class="g-playlist-list__top">
+                  <h2 class="g-playlist-list__title" id="region1">
+                    Buenas Noches
+                  </h2>
+
+                  <div class="m-navigation">
+                    <button
+                      class="m-navigation__prev"
+                      aria-label="Volver"
+                      title="Volver"
+                    >
+                      <i class="icon-arrow-left" aria-hidden="true"></i>
+                    </button>
+                    <button
+                      class="m-navigation__next"
+                      disabled
+                      class=""
+                      aria-label="Avanzar"
+                      title="Avanzar"
+                    >
+                      <i class="icon-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="g-playlist-list__container">
+                  <div class="m-playlist-b">
+                    <div class="m-playlist-b__cover">
+                      <img
+                        src="./img/1.jpg"
+                        width="76"
+                        height="76"
+                        alt="Cover de la playlist Mega Man"
+                      />
+                    </div>
+                    <div class="m-playlist-b__details">
+                      <h3 class="m-playlist-b__title">
+                        Naruto Openings Endings
+                      </h3>
+                      <div class="m-playlist-b__control">
+                        <button
+                          class="a-btn-icon a-btn-icon--primary"
+                          title="Reproducir la lista de reproduccion Mega Man"
+                          aria-label="Reproducir la lista de reproduccion Mega Man"
+                        >
+                          <i class="icon-play" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-playlist-b">
+                    <div class="m-playlist-b__cover">
+                      <img
+                        src="./img/2.jpg"
+                        width="76"
+                        height="76"
+                        alt="Cover de la playlist Mega Man"
+                      />
+                    </div>
+                    <div class="m-playlist-b__details">
+                      <h3 class="m-playlist-b__title">
+                        Naruto Openings Endings
+                      </h3>
+                      <div class="m-playlist-b__control">
+                        <button
+                          class="a-btn-icon a-btn-icon--primary"
+                          title="Reproducir la lista de reproduccion Mega Man"
+                          aria-label="Reproducir la lista de reproduccion Mega Man"
+                        >
+                          <i class="icon-play" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-playlist-b">
+                    <div class="m-playlist-b__cover">
+                      <img
+                        src="./img/3.jpg"
+                        width="76"
+                        height="76"
+                        alt="Cover de la playlist Mega Man"
+                      />
+                    </div>
+                    <div class="m-playlist-b__details">
+                      <h3 class="m-playlist-b__title">
+                        Naruto Openings Endings
+                      </h3>
+                      <div class="m-playlist-b__control">
+                        <button
+                          class="a-btn-icon a-btn-icon--primary"
+                          title="Reproducir la lista de reproduccion Mega Man"
+                          aria-label="Reproducir la lista de reproduccion Mega Man"
+                        >
+                          <i class="icon-play" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-playlist-b">
+                    <div class="m-playlist-b__cover">
+                      <img
+                        src="./img/4.jpg"
+                        width="76"
+                        height="76"
+                        alt="Cover de la playlist Mega Man"
+                      />
+                    </div>
+                    <div class="m-playlist-b__details">
+                      <h3 class="m-playlist-b__title">
+                        Naruto Openings Endings
+                      </h3>
+                      <div class="m-playlist-b__control">
+                        <button
+                          class="a-btn-icon a-btn-icon--primary"
+                          title="Reproducir la lista de reproduccion Mega Man"
+                          aria-label="Reproducir la lista de reproduccion Mega Man"
+                        >
+                          <i class="icon-play" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-playlist-b">
+                    <div class="m-playlist-b__cover">
+                      <img
+                        src="./img/5.jpg"
+                        width="76"
+                        height="76"
+                        alt="Cover de la playlist Mega Man"
+                      />
+                    </div>
+                    <div class="m-playlist-b__details">
+                      <h3 class="m-playlist-b__title">
+                        Naruto Openings Endings
+                      </h3>
+                      <div class="m-playlist-b__control">
+                        <button
+                          class="a-btn-icon a-btn-icon--primary"
+                          title="Reproducir la lista de reproduccion Mega Man"
+                          aria-label="Reproducir la lista de reproduccion Mega Man"
+                        >
+                          <i class="icon-play" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-playlist-b">
+                    <div class="m-playlist-b__cover">
+                      <img
+                        src="./img/6.jpg"
+                        width="76"
+                        height="76"
+                        alt="Cover de la playlist Mega Man"
+                      />
+                    </div>
+                    <div class="m-playlist-b__details">
+                      <h3 class="m-playlist-b__title">
+                        Naruto Openings Endings
+                      </h3>
+                      <div class="m-playlist-b__control">
+                        <button
+                          class="a-btn-icon a-btn-icon--primary"
+                          title="Reproducir la lista de reproduccion Mega Man"
+                          aria-label="Reproducir la lista de reproduccion Mega Man"
+                        >
+                          <i class="icon-play" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-playlist-b">
+                    <div class="m-playlist-b__cover">
+                      <img
+                        src="./img/7.jpg"
+                        width="76"
+                        height="76"
+                        alt="Cover de la playlist Mega Man"
+                      />
+                    </div>
+                    <div class="m-playlist-b__details">
+                      <h3 class="m-playlist-b__title">
+                        Naruto Openings Endings
+                      </h3>
+                      <div class="m-playlist-b__control">
+                        <button
+                          class="a-btn-icon a-btn-icon--primary"
+                          title="Reproducir la lista de reproduccion Mega Man"
+                          aria-label="Reproducir la lista de reproduccion Mega Man"
+                        >
+                          <i class="icon-play" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-playlist-b">
+                    <div class="m-playlist-b__cover">
+                      <img
+                        src="./img/8.jpg"
+                        width="76"
+                        height="76"
+                        alt="Cover de la playlist Mega Man"
+                      />
+                    </div>
+                    <div class="m-playlist-b__details">
+                      <h3 class="m-playlist-b__title">
+                        Naruto Openings Endings
+                      </h3>
+                      <div class="m-playlist-b__control">
+                        <button
+                          class="a-btn-icon a-btn-icon--primary"
+                          title="Reproducir la lista de reproduccion Mega Man"
+                          aria-label="Reproducir la lista de reproduccion Mega Man"
+                        >
+                          <i class="icon-play" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="m-playlist-b">
+                    <div class="m-playlist-b__cover">
+                      <img
+                        src="./img/9.jpg"
+                        width="76"
+                        height="76"
+                        alt="Cover de la playlist Mega Man"
+                      />
+                    </div>
+                    <div class="m-playlist-b__details">
+                      <h3 class="m-playlist-b__title">
+                        Naruto Openings Endings
+                      </h3>
+                      <div class="m-playlist-b__control">
+                        <button
+                          class="a-btn-icon a-btn-icon--primary"
+                          title="Reproducir la lista de reproduccion Mega Man"
+                          aria-label="Reproducir la lista de reproduccion Mega Man"
+                        >
+                          <i class="icon-play" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="g-playlist-list" aria-labelledby="region2">
+                <div class="g-playlist-list__top">
+                  <h2 class="g-playlist-list__title" id="region2">
+                    Escuchado recientmente
+                  </h2>
+                  <div class="m-navigation">
+                    <button
+                      class="m-navigation__prev"
+                      aria-label="Volver"
+                      title="Volver"
+                    >
+                      <i class="icon-arrow-left" aria-hidden="true"></i>
+                    </button>
+                    <button
+                      class="m-navigation__next"
+                      disabled
+                      class=""
+                      aria-label="Avanzar"
+                      title="Avanzar"
+                    >
+                      <i class="icon-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="g-playlist-list__container">
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/30.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/29.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/28.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/27.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/26.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/25.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/24.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/23.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/22.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/21.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/20.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/19.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/18.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                </div>
+              </section>
+
+              <section class="g-playlist-list" aria-labelledby="region3">
+                <div class="g-playlist-list__top">
+                  <h2 class="g-playlist-list__title" id="region3">Podcast</h2>
+                  <div class="m-navigation">
+                    <button
+                      class="m-navigation__prev"
+                      aria-label="Volver"
+                      title="Volver"
+                    >
+                      <i class="icon-arrow-left" aria-hidden="true"></i>
+                    </button>
+                    <button
+                      class="m-navigation__next"
+                      disabled
+                      class=""
+                      aria-label="Avanzar"
+                      title="Avanzar"
+                    >
+                      <i class="icon-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="g-playlist-list__container">
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/17.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/16.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/15.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/14.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/13.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/12.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/11.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/10.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/9.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/8.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/7.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/6.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/5.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                </div>
+              </section>
+
+              <section class="g-playlist-list" aria-labelledby="region4">
+                <div class="g-playlist-list__top">
+                  <h2 class="g-playlist-list__title" id="region4">
+                    Lo mejor de lo mejor
+                  </h2>
+                  <div class="m-navigation">
+                    <button
+                      class="m-navigation__prev"
+                      aria-label="Volver"
+                      title="Volver"
+                    >
+                      <i class="icon-arrow-left" aria-hidden="true"></i>
+                    </button>
+                    <button
+                      class="m-navigation__next"
+                      disabled
+                      class=""
+                      aria-label="Avanzar"
+                      title="Avanzar"
+                    >
+                      <i class="icon-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="g-playlist-list__container">
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/37.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/36.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/35.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/34.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/33.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/3.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/6.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/9.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/12.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/15.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/18.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/21.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                  <div class="m-playlist-a">
+                    <div class="m-playlist-a__cover">
+                      <img
+                        src="./img/24.jpg"
+                        width="150"
+                        height="150"
+                        alt="Cover de playlist Anime Hits"
+                      />
+                      <button
+                        class="a-btn-icon a-btn-icon--primary"
+                        aria-label="Reproducir"
+                        title="Reproducir"
+                      >
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <h3 class="m-playlist-a__title">Anime Hits</h3>
+                    <h4 class="m-playlist-a__description">
+                      Naruto, Your Name, Wearing With You
+                    </h4>
+                  </div>
+                </div>
+              </section>
+            </main>
+          </div>
+        </div>
+      </div>
+
+      <footer class="o-layout__block">
+        <div class="o-layout__bottom">
+          <div class="g-player">
+            <!-- Imagen -->
+            <div class="g-player__now-playing">
+              <div class="m-now-playing">
+                <div class="m-now-playing__cover">
+                  <img
+                    src="./img/10.jpg"
+                    width="56"
+                    height="56"
+                    alt="Portada de Grand Escape (feat. Tokio Miura)"
+                    title="Portada de Grand Escape (feat. Tokio Miura)"
+                  />
+                </div>
+                <div class="m-now-playing__details">
+                  <div class="m-now-playing__description">
+                    <a class="m-now-playing__title" href="#"
+                      >Grand Escape (feat. Tokio Miura)</a
+                    >
+                    <a class="m-now-playing__artist" href="#">
+                      RADWIMPS, Tokio Miura
+                    </a>
+                  </div>
+
+                  <button
+                    class="a-icon-style m-now-playing__actions"
+                    role="switch"
+                    aria-checked="false"
+                    aria-label="Guardar en biblioteca"
+                    title="Guardar en biblioteca"
+                  >
+                    <i class="icon-heart" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- reproductor -->
+            <div class="g-player__player-controls">
+              <div class="m-player-controls">
+                <div
+                  class="m-player-controls__buttons"
+                  aria-label="Controles de reproducción"
+                >
+                  <button
+                    class="a-btn-icon"
+                    aria-label="Anterior"
+                    title="Anterior"
+                  >
+                    <i class="icon-prev" aria-hidden="true"></i>
+                  </button>
+
+                  <button
+                    class="a-btn-icon a-btn-icon--white"
+                    aria-label="Reproducir"
+                    title="Reproducir"
+                  >
+                    <i class="icon-play" aria-hidden="true"></i>
+                  </button>
+
+                  <button
+                    class="a-btn-icon"
+                    aria-label="Siguiente"
+                    title="Siguiente"
+                  >
+                    <i class="icon-next" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+                <div class="m-player-controls__playback">
+                  <span class="a-progress-time"> 01:40 </span>
+
+                  <div class="a-slider">
+                    <div class="a-slider__progress">
+                      <button
+                        class="a-slider__button"
+                        aria-label="Controlar el progreso de la reproducción"
+                      ></button>
+                    </div>
+                  </div>
+
+                  <span class="a-progress-time"> 01:40 </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- volumen -->
+            <div class="g-player__player-volume">
+              <div class="m-player-volume">
+                <button
+                  class="a-icon-style"
+                  aria-label="Silenciar"
+                  aria-describedby="volumen-icon"
+                >
+                  <i
+                    class="icon-volume-up"
+                    id="volumen-icon"
+                    role="presentation"
+                  ></i>
+                </button>
+
+                <div class="a-slider a-slider--slider">
+                  <div class="a-slider__progress">
+                    <button
+                      class="a-slider__button"
+                      aria-label="Controlar el progreso de la reproducción"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
